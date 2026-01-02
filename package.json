@@ -2,7 +2,7 @@
   "name": "divya-jyoti-monolith",
   "version": "1.0.0",
   "scripts": {
-    "build": "npm install --prefix Divya-Jyoti-Ngo && npm run build --prefix Divya-Jyoti-Ngo && npm install --prefix ngo-backend",
+    "build": "npm install --prefix Divya-Jyoti-Ngo --include=dev && npm run build --prefix Divya-Jyoti-Ngo && npm install --prefix ngo-backend",
     "start": "npm start --prefix ngo-backend"
   }
 }
