@@ -47,7 +47,7 @@ if (process.env.NODE_ENV === 'production') {
     // Set static folder - assuming frontend is in '../Divya-Jyoti-Ngo/dist' relative to backend
     app.use(express.static(path.join(__dirname, '../Divya-Jyoti-Ngo/dist')));
 
-    app.get('*', (req, res) => {
+    app.get('*path', (req, res) => {
         res.sendFile(path.resolve(__dirname, '../', 'Divya-Jyoti-Ngo', 'dist', 'index.html'));
     });
 } else {
